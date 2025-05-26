@@ -8,10 +8,14 @@ function About() {
          درباره ی شرکت قطب دانش وفناوری های مدرن(CETEC)
         </h1>
         <p className="text-[24px] font-medium text-gray-300 mt-6 leading-loose pt-5">
-          پلتفرمی جامع برای شناسایی، تشخیص، شمارش، احراز هویت، ردیابی، هدایت و مسیریابی هوشمند
-          مبتنی بر تحلیل انواع جریان داده‌ها به‌صورت برخط بر اساس هوش مصنوعی و یادگیری عمیق <br/>
-        </p>
-        <button className="mt-8 bg-[#1A1D47] text-orange-400 border border-orange-400 px-6 py-2 rounded-lg hover:bg-orange-500 hover:text-white transition">
+        لوازم ایپسوم متن ساختگی با تولید سادگی نامفهوم ازصنعت چاپ و با استفاده از طراحان گرافیک است،چاپگرهاومتون بلکه روزنامه ومجله
+        درستون وسرآنچنان که لازم است، و برای شرایط فعلی نکمولوژی مورد نیاز 
+        وکاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+        
+        
+        
+        <button className="text-[18px] font-medium mt-8 bg-[#1A1D47] text-orange-400 border
+         border-orange-400 px-6 py-2 rounded-lg hover:border-white hover:text-white transition">
     اطلاعات بیشتر  </button>
       </div>
     </section>

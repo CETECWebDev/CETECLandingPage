@@ -7,7 +7,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         
         <div className="flex items-center space-x-2 rtl:space-x-reverse">
-          <img src="/logo.svg" alt="logo" className="h-10 w-auto" />
+          <img src="/logodark.svg" alt="logo" className="h-10 w-auto" />
         
         </div>
 
