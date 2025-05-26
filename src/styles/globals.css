@@ -3,6 +3,17 @@
 @tailwind utilities;
 
 
+/* light styles */
+:root {
+  --primary2 : #F8A61C ; 
+}
+
+.dark {
+  
+}
+
+
+
 /* font weight regular/normal */
 @font-face {
   font-family: 'peyda';
