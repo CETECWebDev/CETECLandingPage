@@ -15,7 +15,7 @@ function About() {
         
         
         <button className="text-[18px] font-medium mt-8 bg-[#1A1D47] text-orange-400 border
-         border-orange-400 px-6 py-2 rounded-lg hover:border-white hover:text-white transition">
+        inner-orange-shadow    border-orange-400 px-6 py-2 rounded-lg hover:bg-orange-400 hover:text-white transition">
     اطلاعات بیشتر  </button>
       </div>
     </section>

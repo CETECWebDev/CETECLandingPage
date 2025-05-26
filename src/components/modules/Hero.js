@@ -13,7 +13,7 @@ export default function Hero() {
           پلتفرمی جامع برای شناسایی، تشخیص، شمارش، احراز هویت، ردیابی، هدایت و مسیریابی هوشمند
           مبتنی بر تحلیل انواع جریان داده‌ها به‌صورت برخط بر اساس هوش مصنوعی و یادگیری عمیق <br/>
         </p>
-        <button className="mt-8 bg-[#1A1D47] text-orange-400 border border-orange-400 px-6 py-2 rounded-lg hover:bg-orange-500 hover:text-white transition">
+        <button className="mt-8 inner-orange-shadow bg-[#1A1D47] text-orange-400 border border-orange-400 px-6 py-3 rounded-xl hover:bg-orange-500 hover:text-white transition">
           سامانه‌ی پیشرفته
         </button>
       </div>
