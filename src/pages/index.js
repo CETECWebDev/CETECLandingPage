@@ -1,10 +1,20 @@
+import Navbar from "@/components/modules/Navbar";
+import Hero from './../components/modules/Hero';
+import Product from "@/components/modules/Products";
+import Features from "@/components/modules/Features";
+import About from "@/components/modules/About";
+import Products from "@/components/modules/Products";
 
 
 
 export default function Home() {
   return (
     <>
-      <div className="text-blue-500 font-bold">Tailwind is working!</div>
+    <Navbar/>
+    <Hero/>
+    <Features/>
+    <About/>
+    <Products/>
 
     </>
   );
