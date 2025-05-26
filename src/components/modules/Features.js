@@ -5,7 +5,7 @@ function Features() {
    <section id="services" class="py-16 bg-[#0B0F2F] text-white">
   <div class="container mx-auto px-6">
     <div class="service-top text-center mb-12">
-      <h1 class="text-4xl font-bold mb-4">
+      <h1 class="text-[32px] font-extrabold mb-4">
        کاربردهای هوشمند فناوری های ما
       </h1>
      
@@ -16,8 +16,8 @@ function Features() {
         <div class="icon mb-4 flex justify-center">
           <img src="https://img.icons8.com/bubbles/100/000000/services.png" alt="Service Icon" />
         </div>
-        <h2 class="text-xl font-semibold mb-2">هایتک</h2>
-        <p class="text-gray-400">
+        <h2 class="text-[28px] font-bold mb-2">صنعتی</h2>
+        <p class="text-[18px] font-medium text-gray-400">
           به کارگیری فتاوری های هوشمند برای بهینه سازی فناوری هوشمند
         </p>
       </div>
@@ -26,8 +26,8 @@ function Features() {
         <div class="icon mb-4 flex justify-center">
           <img src="https://img.icons8.com/bubbles/100/000000/services.png" alt="Service Icon" />
         </div>
-        <h2 class="text-xl font-semibold mb-2">سازمانی</h2>
-        <p class="text-gray-400">
+        <h2 class="text-[28px] font-bold mb-2">تجاری</h2>
+        <p class="text-[18px] font-medium text-gray-400">
            به کارگیری فتاوری های هوشمند برای بهینه سازی فناوری هوشمند
         </p>
       </div>
@@ -36,8 +36,8 @@ function Features() {
         <div class="icon mb-4 flex justify-center">
           <img src="https://img.icons8.com/bubbles/100/000000/services.png" alt="Service Icon" />
         </div>
-        <h2 class="text-xl font-semibold mb-2">تجاری</h2>
-        <p class="text-gray-300">
+        <h2 class="text-[28px] font-bold mb-2">سازمانی</h2>
+        <p class="text-[18px] font-medium text-gray-400">
            به کارگیری فتاوری های هوشمند برای بهینه سازی فناوری هوشمند
         </p>
       </div>
@@ -46,8 +46,8 @@ function Features() {
         <div class="icon mb-4 flex justify-center">
           <img src="https://img.icons8.com/bubbles/100/000000/services.png" alt="Service Icon" />
         </div>
-        <h2 class="text-xl font-semibold mb-2">صنعتی</h2>
-        <p class="text-gray-400">
+        <h2 class="text-[28px] font-bold mb-2">هایتک</h2>
+        <p class="text-[18px] font-medium text-gray-400">
           به کارگیری فتاوری های هوشمند برای بهینه سازی فناوری هوشمند
          </p>
       </div>

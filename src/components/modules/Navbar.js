@@ -12,15 +12,15 @@ export default function Navbar() {
         </div>
 
         {/* منو وسط */}
-        <ul className="flex items-center space-x-6 rtl:space-x-reverse text-sm">
+        <ul className=" text-[24px] font-medium flex items-center space-x-6 rtl:space-x-reverse text-sm">
         
-          <li className="flex items-center cursor-pointer hover:text-orange-400 space-x-1 rtl:space-x-reverse">
+          <li className="text-[20px] font-medium flex items-center cursor-pointer hover:text-orange-400 space-x-1 rtl:space-x-reverse">
             <span>محصولات</span>
             <FaChevronDown className="text-white" />
           </li>
 
           
-          <li className="flex items-center cursor-pointer hover:text-orange-400 space-x-1 rtl:space-x-reverse">
+          <li className=" text-[20px] font-medium flex items-center cursor-pointer hover:text-orange-400 space-x-1 rtl:space-x-reverse">
             <span>پروژه‌ها</span>
             <FaChevronDown className="text-white" />
           </li>
@@ -36,7 +36,7 @@ export default function Navbar() {
         </ul>
 
       
-        <button className="border border-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-500 transition text-sm">
+        <button className="text-[24px] font-medium border border-orange-500 text-white px-4 py-2 rounded-full hover:border-white transition text-sm">
           ثبت‌نام / ورود
         </button>
       </div>
