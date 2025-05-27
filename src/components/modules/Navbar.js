@@ -15,8 +15,9 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className=" text-white px-6 py-4" dir="rtl">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+    <div className="container hidden lg:block">
+       <nav className=" text-white px-6 py-4" dir="rtl">
+      <div className=" flex items-center justify-between">
         <div className="flex items-center space-x-2 rtl:space-x-reverse">
           <img src="/logodark.svg" alt="logo" className="h-[50px] w-[150px]" />
         </div>
@@ -25,7 +26,7 @@ export default function Navbar() {
           {menus.map((menu, i) => (
             <li
               key={i}
-              className={` py-4 px-2 relative text-[20px] font-medium flex items-center cursor-pointer hover:text-orange-400 space-x-1 rtl:space-x-reverse ${
+              className={` gap-2 py-4 px-2 relative text-[20px] font-medium flex items-center cursor-pointer hover:text-orange-400 space-x-1 rtl:space-x-reverse ${
                 openIndex === i ? "text-orange-400" : ""
               }`}
               onMouseEnter={() => setOpenIndex(i)}   // موس وارد منو شد => بازش کن
@@ -63,5 +64,7 @@ export default function Navbar() {
         </button>
       </div>
     </nav>
+    </div>
+   
   );
 }

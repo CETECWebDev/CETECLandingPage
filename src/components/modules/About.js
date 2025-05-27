@@ -2,8 +2,9 @@ import React from 'react'
 
 function About() {
   return (
-     <section className=" text-white min-h-screen flex items-center justify-center px-6 text-center">
-      <div className="max-w-6xl">
+    <div className="container">
+   <section className=" text-white min-h-screen flex items-center justify-center px-6 text-center">
+      <div className="">
         <h1 className="text-[32px] font-extrabold  md:text-4xl  leading-relaxed text-center text-white">
          درباره ی شرکت قطب دانش وفناوری های مدرن(CETEC)
         </h1>
@@ -19,6 +20,8 @@ function About() {
     اطلاعات بیشتر  </button>
       </div>
     </section>
+    </div>
+  
   )
 }
 

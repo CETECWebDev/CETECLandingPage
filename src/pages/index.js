@@ -4,6 +4,7 @@ import Product from "@/components/modules/Products";
 import Features from "@/components/modules/Features";
 import About from "@/components/modules/About";
 import Products from "@/components/modules/Products";
+import Wave from "@/components/modules/Wave";
 
 
 
@@ -15,6 +16,7 @@ export default function Home() {
     <Features/>
     <About/>
     <Products/>
+    <Wave/>
 
     </>
   );
