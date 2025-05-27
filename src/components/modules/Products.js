@@ -176,7 +176,7 @@ function Products() {
               smart vertical take_off drone
             </p>
           </div>
-          <div className="bg-[#00143B] rounded-xl p-6 w-full max-w-xs text-center">
+          <div className=" rounded-xl p-6 w-full max-w-xs text-center">
             <img src="/img1.jpg" alt="drone" className="mx-auto h-24 mb-4" />
             <p className="text-[10px] font-normal text-green-600">پهپاد عمود پرواز هوشمند</p>
             <p className="text-[24px] font-semibold text-green-400 mt-1">ورژن ۱.۲</p>
