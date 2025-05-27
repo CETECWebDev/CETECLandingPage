@@ -4,7 +4,7 @@ function Products() {
   return (
     <div className='container'>
    
-    <section className="py-16 bg-[#0B0F2F] text-white" dir="rtl">
+    <section className="py-16  text-white" dir="rtl">
       <div className="container mx-auto px-6 text-center mb-16">
         <h1 className="text-[32px] font-extrabold mb-4">محصولات قطب دانش (CETEC)</h1>
         <p className="text-[20px] font-medium text-white">
