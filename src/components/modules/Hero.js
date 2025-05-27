@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="bg-[#0B0F2F] text-white min-h-screen flex items-center justify-center px-6 text-center">
+    <section className=" text-white min-h-screen flex items-center justify-center px-6 text-center">
       <div className="max-w-6xl">
         <h1 className="text-[48px] font-medium  md:text-4xl  leading-relaxed text-center text-orange-400">
           قطب دانش

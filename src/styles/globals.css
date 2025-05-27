@@ -6,10 +6,16 @@
 /* light styles */
 :root {
   --primary2 : #F8A61C ; 
+  --BgColor : linear-gradient(#020621, #020A2A);
+  --SideBarColor : linear-gradient(#020621, #020A2A);
 }
 
 .dark {
   
+}
+
+body{
+  background: var(--BgColor);
 }
 
 
