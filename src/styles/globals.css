@@ -12,6 +12,7 @@
   --SideBarColor : linear-gradient(#020621, #020A2A);
   --darkTextColor : #FFFFF5;
   --darkPrimary : #0C0F2C;
+  --dark-light-primary: #1A1D3C;
 }
 
 .dark {
@@ -104,6 +105,7 @@ body{
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
+  overflow: visible;
 }
 
 .swiper-slide {

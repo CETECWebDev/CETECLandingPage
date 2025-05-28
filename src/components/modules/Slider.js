@@ -8,16 +8,19 @@ import 'swiper/css/pagination';
 export default function Slider() {
 return (
     <>
+    <div>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
+        initialSlide={1}
+        // loop={true}
         slidesPerView={3}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
           depth: 100,
-          modifier: 3,
+          modifier: 1,
           slideShadows: true,
         }}
         pagination={true}
@@ -25,16 +28,27 @@ return (
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+          <div className='rounded-3xl p-6 bg-[var(--dark-light-primary)]'>
+          <img src="/imgiot.png" />
+
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          <div className='rounded-3xl p-6 bg-[var(--dark-light-primary)]'>
+          <img src="/imgiot.png" />
+
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          <div className='rounded-3xl p-6 bg-[var(--dark-light-primary)]'>
+          <img src="/imgiot.png" className='w-full h-auto rounded-3xl object-cover' />
+
+          </div>
         </SwiperSlide>
 
       </Swiper>
+    </div>
+
     </>
   );
 }
