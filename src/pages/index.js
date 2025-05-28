@@ -30,8 +30,8 @@ export default function Home() {
     <Project/>
     <ProductOffice/>
     <Customer/>
-    <CustomerReviews/>
-    <AdvicingCard />
+    {/* <CustomerReviews/> */}
+    {/* <AdvicingCard /> */}
     </>
   );
 }

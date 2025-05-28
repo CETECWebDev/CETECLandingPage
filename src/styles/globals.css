@@ -95,6 +95,8 @@ body{
 
 .container{
   margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 
@@ -118,4 +120,17 @@ body{
 .swiper-slide img {
   display: block;
   width: 100%;
+}
+
+
+
+.custom-banner-earth {
+   background: center/cover no-repeat url(/earth.svg);
+
+}
+
+.custom-banner-wave {
+   background: center/cover no-repeat url(/wave.svg);
+   height: 356px;
+   
 }

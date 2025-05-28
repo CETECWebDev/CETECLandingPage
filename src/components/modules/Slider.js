@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 export default function Slider() {
 return (
     <>
-    <div>
+    <div className=''>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}

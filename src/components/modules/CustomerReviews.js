@@ -9,7 +9,7 @@ function CustomerReviews() {
           <h1 className="text-[32px] font-extrabold md:text-4xl leading-relaxed text-center text-white">
             نظرات مشتریان قطب دانش
           </h1>
-          <p className="text-[20px] font-medium text-gray-300 mt-6 leading-loose pt-5 max-w-3xl mx-auto">
+          <p className="text-[20px] font-medium text-gray-300 mt-6 leading-loose pt-5">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است، با استفاده از طراحان گرافیک. چاپگرها و متون بلکه روزنامه‌ها و مجله‌ها در ستون و سطر لازم، و برای شرایط فعلی تکنولوژی و کاربردهای متنوع طراحی شده‌اند.
           </p>
 
