@@ -149,7 +149,7 @@ export default function Navbar() {
             ))}
           </ul>
 
-          <button className="text-[24px] font-medium border border-[var(--primary2)] text-white px-[24px] py-[11px] rounded-[25px] hover:border-white transition">
+          <button className="text-[18px] font-medium border border-[var(--primary2)] text-white px-[24px] py-[11px] rounded-[25px] hover:border-white transition">
             ثبت‌نام / ورود
           </button>
         </div>
