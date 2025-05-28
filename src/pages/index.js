@@ -10,6 +10,7 @@ import Project from "@/components/modules/Project";
 import ProductOffice from "@/components/modules/ProductOffice";
 import Customer from "@/components/modules/Customer";
 import CustomerReviews from "@/components/modules/CustomerReviews";
+import AdvicingCard from "@/components/modules/AdvicingCard";
 
 
 
@@ -27,7 +28,7 @@ export default function Home() {
     <ProductOffice/>
     <Customer/>
     <CustomerReviews/>
-
+    <AdvicingCard />
     </>
   );
 }
