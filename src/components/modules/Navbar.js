@@ -98,7 +98,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="container hidden lg:block">
+    <div className="container">
       <nav className="text-white px-6 py-4" dir="rtl">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2 rtl:space-x-reverse">
