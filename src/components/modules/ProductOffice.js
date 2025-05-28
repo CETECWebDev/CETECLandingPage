@@ -4,7 +4,7 @@ import React from 'react'
 function ProductOffice() {
   return (
 
-  <section className="py-16 text-white bg-[#0B1120]" dir="rtl">
+  <section className="py-16 text-white" dir="rtl">
   <h1 className="text-[32px] font-extrabold text-white text-center mb-10">
     محصولات قطب دانش
   </h1>

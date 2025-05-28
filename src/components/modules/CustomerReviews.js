@@ -3,7 +3,7 @@ import React from 'react'
 function CustomerReviews() {
   return (
     <div className="container">
-      <section className="text-white min-h-screen flex flex-col items-center justify-center px-6 text-center bg-[#0B1120]" dir="rtl">
+      <section className="text-white min-h-screen flex flex-col items-center justify-center px-6 text-center" dir="rtl">
         <div>
           {/* عنوان و توضیح */}
           <h1 className="text-[32px] font-extrabold md:text-4xl leading-relaxed text-center text-white">

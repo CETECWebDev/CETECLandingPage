@@ -11,6 +11,7 @@ import ProductOffice from "@/components/modules/ProductOffice";
 import Customer from "@/components/modules/Customer";
 import CustomerReviews from "@/components/modules/CustomerReviews";
 import AdvicingCard from "@/components/modules/AdvicingCard";
+import Slider from "@/components/modules/Slider";
 
 
 
@@ -24,6 +25,7 @@ export default function Home() {
     <Wave/>
     <Products/>
     <Technologies/>
+    <Slider/>
     <Project/>
     <ProductOffice/>
     <Customer/>
