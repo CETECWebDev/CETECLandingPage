@@ -2,7 +2,7 @@ import React from 'react';
 
 function Features() {
   return (
-    <section id="services" className="py-16 bg-[#0B0F2F] text-white">
+    <section id="services" className="py-16  text-white">
       <div className="container mx-auto px-6">
         <div className="service-top text-center mb-12">
           <h1 className="text-[32px] font-extrabold mb-4">

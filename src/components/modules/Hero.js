@@ -1,7 +1,8 @@
 export default function Hero() {
   return (
-    <section className="bg-[#0B0F2F] text-white min-h-screen flex items-center justify-center px-6 text-center">
-      <div className="max-w-6xl">
+    <div className="custom-banner-earth">
+          <section className=" text-white min-h-screen flex items-center justify-center px-6 text-center">
+      <div className="">
         <h1 className="text-[48px] font-medium  md:text-4xl  leading-relaxed text-center text-orange-400">
           قطب دانش
            <span className="inline-block  text-[32px] font-semibold text-white">
@@ -13,10 +14,11 @@ export default function Hero() {
           پلتفرمی جامع برای شناسایی، تشخیص، شمارش، احراز هویت، ردیابی، هدایت و مسیریابی هوشمند
           مبتنی بر تحلیل انواع جریان داده‌ها به‌صورت برخط بر اساس هوش مصنوعی و یادگیری عمیق <br/>
         </p>
-        <button className="mt-8 bg-[#1A1D47] text-orange-400 border border-orange-400 px-6 py-2 rounded-lg hover:bg-orange-500 hover:text-white transition">
+        <button className="mt-8 inner-orange-shadow bg-[#1A1D47] text-orange-400 border border-orange-400 px-6 py-3 rounded-xl hover:bg-orange-500 hover:text-white transition">
           سامانه‌ی پیشرفته
         </button>
       </div>
     </section>
+    </div>
   );
 }

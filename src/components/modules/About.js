@@ -2,8 +2,9 @@ import React from 'react'
 
 function About() {
   return (
-     <section className="bg-[#0B0F2F] text-white min-h-screen flex items-center justify-center px-6 text-center">
-      <div className="max-w-6xl">
+    <div className="container">
+   <section className=" min-h-screen flex items-center justify-center px-6 text-center">
+      <div className="">
         <h1 className="text-[32px] font-extrabold  md:text-4xl  leading-relaxed text-center text-white">
          درباره ی شرکت قطب دانش وفناوری های مدرن(CETEC)
         </h1>
@@ -14,11 +15,13 @@ function About() {
         
         
         
-        <button className="text-[18px] font-medium mt-8 bg-[#1A1D47] text-orange-400 border
-         border-orange-400 px-6 py-2 rounded-lg hover:border-white hover:text-white transition">
+        <button className="text-[18px] font-medium mt-8
+        inner-orange-shadow    px-6 py-2 rounded-lg hover:bg-[var(--dark-light-primary)] hover:text-white transition">
     اطلاعات بیشتر  </button>
       </div>
     </section>
+    </div>
+  
   )
 }
 

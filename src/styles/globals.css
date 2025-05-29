@@ -3,6 +3,43 @@
 @tailwind utilities;
 
 
+
+
+/* light styles */
+:root {
+  --primary2 : #F8A61C ; 
+  --BgColor : linear-gradient(#020621, #020A2A);
+  --SideBarColor : linear-gradient(#020621, #020A2A);
+  --darkTextColor : #FFFFF5;
+  --darkPrimary : #0C0F2C;
+  --dark-light-primary: #1A1D3C;
+  
+  --light-primary2:#F8A61C;
+}
+
+.dark {
+  
+}
+
+
+
+.inner-orange-shadow {
+  box-shadow: inset 5px 5px 10px rgba(248, 166, 28, 0.5), inset -5px -5px 10px rgba(248, 166, 28, 0.5);
+  color: var(--light-primary2);
+  border: 1px solid var(--primary2);
+}
+
+.inner-orange-shadow:hover{
+  box-shadow: none;
+  border: 1px solid var(--darkTextColor);
+}
+
+body{
+  background: var(--BgColor);
+}
+
+
+
 /* font weight regular/normal */
 @font-face {
   font-family: 'peyda';
@@ -61,4 +98,63 @@
        url('/fonts/PeydaWeb/Woff/PeydaWeb-ExtraBold.woff') format('woff') ;
   font-weight: 800;
   font-style: normal;
+}
+
+
+
+
+
+
+
+.container{
+  margin: 0 auto;
+}
+
+
+
+/* slider styles */
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  user-select: none;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.swiper-slide-active img{
+  padding: 6px;
+  /* box-shadow: 0px 0px 10px rgba(248, 166, 28, 0.5); */
+
+}
+
+
+.swiper-pagination-bullet {
+  background: #FFFFF580 !important;
+  width: 15px !important;
+  height: 15px !important;
+  /* transition: all 0.7s ease-in-out; */
+}
+
+.swiper-pagination-bullet-active {
+  outline:2px solid #fff ;
+}
+
+
+.custom-banner-earth {
+   background: center/cover no-repeat url(/earth.svg);
+
+}
+
+.custom-banner-wave {
+   background: center/cover no-repeat url(/wave.svg);
+   
 }
