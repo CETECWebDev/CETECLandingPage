@@ -12,7 +12,7 @@ function Products() {
         </p>
       </div>
 
-   <div className="grid md:grid-cols-2 items-center gap-8 max-w-7xl mx-auto mb-20">
+   <div className="grid md:grid-cols-2 items-center gap-8 mb-20">
          <div className="flex flex-row items-center justify-start gap-4">
           <div className="w-[6px] h-80 bg-orange-500 rounded" />
           <div>
@@ -50,7 +50,7 @@ function Products() {
 
 
       {/* محصول ۲ */}
-      <div className="grid md:grid-cols-2 items-center gap-8 max-w-7xl mx-auto mb-20">
+      <div className="grid md:grid-cols-2 items-center gap-8  mx-auto mb-20">
         <div>
           <h2 className="text-[32px] font-semibold mb-2">
             پهپاد عمود پرواز هوشمند{" "}
@@ -93,7 +93,7 @@ function Products() {
     
     
       {/* محصول ۳ */}
-      <div className="grid md:grid-cols-2 items-center gap-8 max-w-7xl mx-auto mb-20">
+      <div className="grid md:grid-cols-2 items-center gap-8 mx-auto mb-20">
          <div className="flex flex-row items-center justify-start gap-4">
           <div className="w-[6px] h-80 bg-orange-500 rounded" />
           <div>
@@ -129,7 +129,7 @@ function Products() {
 
       {/* محصول ۴ */}
      {/* محصول ۲ */}
-      <div className="grid md:grid-cols-2 items-center gap-8 max-w-7xl mx-auto mb-20">
+      <div className="grid md:grid-cols-2 items-center gap-8 mx-auto mb-20">
         <div>
           <h2 className="text-[32px] font-semibold mb-2">
             پهپاد عمود پرواز هوشمند{" "}
@@ -165,7 +165,7 @@ function Products() {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 items-center gap-8 max-w-7xl mx-auto mb-20">
+      <div className="grid md:grid-cols-2 items-center gap-8  mx-auto mb-20">
          <div className="flex flex-row items-center justify-start gap-4">
           <div className="w-[6px] h-80 bg-orange-500 rounded" />
           <div>
