@@ -50,7 +50,7 @@ return (
         </SwiperSlide>
         <SwiperSlide>
           <div className='rounded-3xl p-6 bg-[var(--dark-light-primary)]'>
-          <img className='object-cover h-full' src="/imgiot.png" className='w-full h-auto rounded-3xl object-cover' />
+          <img src="/imgiot.png" className='w-full h-auto rounded-3xl object-cover' />
 
           </div>
         </SwiperSlide>
