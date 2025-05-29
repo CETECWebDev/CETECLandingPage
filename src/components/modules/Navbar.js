@@ -137,7 +137,7 @@ export default function Navbar() {
                 <ul
                   className={` absolute left-[50%] translate-x-[-50%] top-full mt-2  grid grid-cols-2 gap-4
         } 
-        w-[600px] bg-[#030F3F80] rounded-2xl p-2 shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200`}
+        w-[600px] bg-[#030F3F80] rounded-2xl p-2 shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all ease-in-out duration-700`}
                 >
                   {(submenuItems[menu.key] || []).map((item, idx) => (
                     <li key={idx}>
