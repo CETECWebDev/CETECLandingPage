@@ -9,7 +9,7 @@ function ProductOffice() {
     محصولات قطب دانش
   </h1>
 
-  <div className="grid md:grid-cols-3 gap-12 max-w-7xl mx-auto px-4 mb-20 items-center">
+  <div className="grid md:grid-cols-3 gap-12  px-4 mb-20 items-center">
     
     {/* ستون 1: لیست محصولات */}
     <div>
