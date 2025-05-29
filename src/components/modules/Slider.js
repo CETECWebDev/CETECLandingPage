@@ -13,17 +13,26 @@ return (
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
-        initialSlide={1}
-        // loop={true}
+        initialSlide={0}
+        loop={true}
+        // speed={1000}
+        spaceBetween={100}
         slidesPerView={3}
         coverflowEffect={{
-          rotate: 50,
+          rotate: 0,
           stretch: 0,
           depth: 100,
           modifier: 1,
-          slideShadows: true,
+          slideShadows: false,
         }}
-        pagination={true}
+        pagination={{
+          clickable: true,
+        }}
+        mousewheel={{
+          invert: true ,
+          thresholdDelta:50,
+          sensitivity: 1,
+        }}
         modules={[EffectCoverflow, Pagination]}
         className="mySwiper"
       >
