@@ -3,7 +3,7 @@ import React from 'react'
 function Customer() {
   return (
      <div className="container">
-   <section className=" text-white min-h-screen flex items-center justify-center px-6 text-center">
+   <section className=" text-white flex items-center justify-center px-6 text-center">
       <div className="">
         <h1 className="text-[32px] font-extrabold  md:text-4xl  leading-relaxed text-center text-white">
        مشتریان قطب دانش </h1>

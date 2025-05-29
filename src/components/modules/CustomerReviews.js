@@ -4,7 +4,7 @@ function CustomerReviews() {
   return (
     <div className="container">
       <section
-        className="text-white min-h-screen flex flex-col items-center justify-center px-6 text-center"
+        className="text-white flex flex-col items-center justify-center px-6 text-center"
         dir="rtl"
       >
         <div>
