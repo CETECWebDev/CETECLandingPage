@@ -3,14 +3,14 @@ import AdvicingDotLayout from './AdvicingDotLayout'
 
 export default function AdvicingCard() {
     return (
-        <div className='w-full'>
+        <div className='w-full hidden lg:block'>
 
             <div className='container py-[88px]'>
 
 
 
 
-                <div className='w-[90%] mr-auto ml-auto h-[250px] bg-[#F8A61C] rounded-[12px] relative'>
+                <div className='w-[90%] mr-auto ml-auto h-[250px] bg-[#F8A61C]  rounded-[12px] relative'>
 
                     <AdvicingDotLayout />
 

@@ -10,6 +10,8 @@ import ProductOffice from "@/components/modules/ProductOffice";
 import Customer from "@/components/modules/Customer";
 import Slider from "@/components/modules/Slider";
 import Footer from "@/components/modules/Footer";
+import CustomerReviews from "@/components/modules/CustomerReviews";
+import AdvicingCard from "@/components/modules/AdvicingCard";
 
 export default function Home() {
   return (
@@ -25,9 +27,10 @@ export default function Home() {
       <Project />
       <ProductOffice />
       <Customer />
+      <CustomerReviews />
+      <AdvicingCard />
       <Footer />
-      {/* <CustomerReviews /> */}
-      {/* <AdvicingCard /> */}
+
     </>
   );
 }

@@ -13,29 +13,38 @@ return (
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
-        initialSlide={1}
-        // loop={true}
+        initialSlide={0}
+        loop={true}
+        // speed={1000}
+        spaceBetween={100}
         slidesPerView={3}
         coverflowEffect={{
-          rotate: 50,
+          rotate: 0,
           stretch: 0,
           depth: 100,
           modifier: 1,
-          slideShadows: true,
+          slideShadows: false,
         }}
-        pagination={true}
+        pagination={{
+          clickable: true,
+        }}
+        mousewheel={{
+          invert: true ,
+          thresholdDelta:50,
+          sensitivity: 1,
+        }}
         modules={[EffectCoverflow, Pagination]}
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className='rounded-3xl p-6 bg-[var(--dark-light-primary)]'>
-          <img src="/imgiot.png" />
+          <div className='h-[300px] rounded-3xl p-6 bg-[var(--dark-light-primary)]'>
+          <img className='object-cover h-full'  src="/img1.jpg" />
 
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className='rounded-3xl p-6 bg-[var(--dark-light-primary)]'>
-          <img src="/imgiot.png" />
+          <img className='object-cover h-full' src="/imgiot.png" />
 
           </div>
         </SwiperSlide>
