@@ -114,49 +114,41 @@ body{
 
 /* slider styles */
 
-.swiper {
-  width: 100%;
+.slider-controler .slider-arrow {
+  background: var(white);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  left: 42%;
+  transform: translateX(-42%);
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
 }
 
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  user-select: none;
+.slider-controler .slider-arrow ion-icon {
+  font-size: 2rem;
+  color: #222224;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
+.slider-controler .slider-arrow::after {
+  content: '';
 }
 
-.swiper-slide-active img{
-  padding: 6px;
-  /* box-shadow: 0px 0px 10px rgba(248, 166, 28, 0.5); */
-
+.swiper-pagination {
+  position: relative;
+  width: 15rem !important;
+  bottom: 1rem;
 }
 
-
-.swiper-pagination-bullet {
-  background: #FFFFF580 !important;
-  width: 15px !important;
-  height: 15px !important;
-  /* transition: all 0.7s ease-in-out; */
+.swiper-pagination .swiper-pagination-bullet {
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
 }
 
-.swiper-pagination-bullet-active {
-  outline:2px solid #fff ;
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: var(--primary);
 }
 
 
-.custom-banner-earth {
-   background: center/cover no-repeat url(/earth.svg);
 
-}
 
-.custom-banner-wave {
-   background: center/cover no-repeat url(/wave.svg);
-   
-}
 
 

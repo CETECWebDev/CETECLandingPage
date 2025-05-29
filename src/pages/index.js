@@ -24,7 +24,7 @@ export default function Home() {
         <Wave />
         <Products />
         <Technologies />
-        {/* <Slider /> */}
+        <Slider />
         <Project />
         <ProductOffice />
         <Customer />

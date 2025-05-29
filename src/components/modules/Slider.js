@@ -1,40 +1,46 @@
 import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { EffectCoverflow, Pagination  , Navigation} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
 
 export default function Slider() {
 return (
     <>
-    <div className=''>
+    <div className='container'>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
         initialSlide={0}
-        loop={true}
+        loop={false}
         // speed={1000}
-        spaceBetween={100}
+        spaceBetween={60}
         slidesPerView={3}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
           depth: 100,
-          modifier: 1,
+          modifier: 2,
           slideShadows: false,
         }}
-        pagination={{
-          clickable: true,
-        }}
+
         mousewheel={{
           invert: true ,
           thresholdDelta:50,
           sensitivity: 1,
         }}
-        modules={[EffectCoverflow, Pagination]}
-        className="mySwiper"
+        pagination={{el:'.swiper-pagination' , clickable:true}}
+        navigation={{
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+          clickable: true,
+        }}
+        modules={[EffectCoverflow, Pagination , Navigation]}
+        className="swiper_container"
       >
         <SwiperSlide>
           <div className='h-[300px] rounded-3xl p-6 bg-[var(--dark-light-primary)]'>
@@ -54,6 +60,20 @@ return (
 
           </div>
         </SwiperSlide>
+
+
+        <div className="Slider-controller">
+
+          <div className="swiper-button-prev slider-arrow">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+          </div>
+          <div className="swiper-button-next slider-arrow">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </div>
+
+          <div className="swiper-pagination"></div>
+
+        </div>
 
       </Swiper>
     </div>

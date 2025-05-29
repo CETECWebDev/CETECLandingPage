@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
   return (
-    <div className="container">
+    <div className="container relative">
    <section className=" flex items-center justify-center px-6 text-center">
       <div className="">
         <h1 className="text-[32px] font-extrabold  md:text-4xl  leading-relaxed text-center text-white">
@@ -20,6 +20,9 @@ function About() {
     اطلاعات بیشتر  </button>
       </div>
     </section>
+
+
+
     </div>
   
   )
