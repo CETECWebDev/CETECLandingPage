@@ -10,7 +10,7 @@ export default function AdvicingCard() {
 
 
 
-                <div className='w-[90%] mr-auto ml-auto h-[250px] bg-[#F8A61C] rounded-[12px] relative'>
+                <div className='w-[90%] mr-auto ml-auto h-[250px] bg-[#F8A61C]  rounded-[12px] relative'>
 
                     <AdvicingDotLayout />
 

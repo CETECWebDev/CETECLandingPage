@@ -3,6 +3,7 @@ import { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import Link from "next/link";
 import { GiDeliveryDrone } from "react-icons/gi";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function Navbar() {
   const mainMenus = [
@@ -13,7 +14,7 @@ export default function Navbar() {
 
   const submenuItems = {
     products: [
-            {
+      {
         title: "پهپاد باربر نسل ۲",
         desc: "حمل بار تا ۲۰ کیلوگرم در ارتفاع بالا",
         href: "#",
@@ -23,7 +24,7 @@ export default function Navbar() {
         desc: "ویژه عملیات امدادی در شرایط بحرانی",
         href: "#",
       },
-                  {
+      {
         title: "پهپاد باربر نسل ۲",
         desc: "حمل بار تا ۲۰ کیلوگرم در ارتفاع بالا",
         href: "#",
@@ -33,7 +34,7 @@ export default function Navbar() {
         desc: "ویژه عملیات امدادی در شرایط بحرانی",
         href: "#",
       },
-                  {
+      {
         title: "پهپاد باربر نسل ۲",
         desc: "حمل بار تا ۲۰ کیلوگرم در ارتفاع بالا",
         href: "#",
@@ -56,7 +57,7 @@ export default function Navbar() {
         desc: "ویژه عملیات امدادی در شرایط بحرانی",
         href: "#",
       },
-            {
+      {
         title: "پهپاد باربر نسل ۲",
         desc: "حمل بار تا ۲۰ کیلوگرم در ارتفاع بالا",
         href: "#",
@@ -68,7 +69,7 @@ export default function Navbar() {
       },
     ],
     about: [
-            {
+      {
         title: "پهپاد باربر نسل ۲",
         desc: "حمل بار تا ۲۰ کیلوگرم در ارتفاع بالا",
         href: "#",
@@ -78,7 +79,7 @@ export default function Navbar() {
         desc: "ویژه عملیات امدادی در شرایط بحرانی",
         href: "#",
       },
-                  {
+      {
         title: "پهپاد باربر نسل ۲",
         desc: "حمل بار تا ۲۰ کیلوگرم در ارتفاع بالا",
         href: "#",
@@ -88,7 +89,7 @@ export default function Navbar() {
         desc: "ویژه عملیات امدادی در شرایط بحرانی",
         href: "#",
       },
-                  {
+      {
         title: "پهپاد باربر نسل ۲",
         desc: "حمل بار تا ۲۰ کیلوگرم در ارتفاع بالا",
         href: "#",
@@ -99,8 +100,19 @@ export default function Navbar() {
 
   return (
     <div className="container">
-      <nav className="text-white px-6 py-4 hidden lg:block">
+      <nav className="text-white px-6 py-4 lg:block">
         <div className="flex items-center justify-between">
+
+          {/* Mobile Hamburger Menu */}
+
+          <button className="flex lg:hidden items-center gap-2 text-[var(--primary2)] shadow-[var(--primary2)] rounded-full inner-orange-shadow py-3  px-5">
+            <RxHamburgerMenu />
+            <span>فهرست</span>
+          </button>
+
+
+          {/* Logo */}
+
           <div className="flex items-center space-x-2 rtl:space-x-reverse">
             <img
               src="/logodark.svg"
@@ -109,7 +121,10 @@ export default function Navbar() {
             />
           </div>
 
-          <ul className="flex gap-4 text-xl font-medium text-white">
+
+          {/* Menu Option */}
+
+          <ul className="hidden lg:flex gap-4 text-xl font-medium text-white">
             {mainMenus.map((menu) => (
               <li
                 key={menu.key}
@@ -130,17 +145,17 @@ export default function Navbar() {
                         href={item.href}
                         className="block px-4 py-2 bg-opacity-50  ] "
                       >
-                       
-                          <div className="flex gap-2    hover:bg-[var(--darkPrimary) ">
-                            <GiDeliveryDrone className="text-[var(--primary2)] text-xl" />
-                            <div className="flex flex-col justify-center">
-                              <h3 className="font-bold">{item.title}</h3>
-                              <p className="text-gray-600 text-sm font-medium">
-                                {item.desc}
-                              </p>
-                            </div>
+
+                        <div className="flex gap-2    hover:bg-[var(--darkPrimary) ">
+                          <GiDeliveryDrone className="text-[var(--primary2)] text-xl" />
+                          <div className="flex flex-col justify-center">
+                            <h3 className="font-bold">{item.title}</h3>
+                            <p className="text-gray-600 text-sm font-medium">
+                              {item.desc}
+                            </p>
                           </div>
-                 
+                        </div>
+
                       </Link>
                     </li>
                   ))}
@@ -149,9 +164,12 @@ export default function Navbar() {
             ))}
           </ul>
 
+          {/* Register/Login Button */}
+
           <button className="text-[18px] font-medium border border-[var(--primary2)] text-white px-[24px] py-[11px] rounded-[25px] hover:border-white transition">
             ثبت‌نام / ورود
           </button>
+
         </div>
       </nav>
     </div>
