@@ -121,9 +121,9 @@ function Products() {
             از جمله امداد و نجات، مدیریت بحران، بازرسی و امنیت و سامانه‌های مدار
             بسته و... مناسب می‌سازد. به راحتی تنظیم و راه‌اندازی می‌شود.
           </p>
-          <button className="text-[18px] font-medium border border-yellow-400 text-yellow-400 px-6 py-2 rounded-full hover:text-white transition">
-            اطلاعات بیشتر
-          </button>
+        <button className="text-[18px] font-medium mt-8  border
+        inner-orange-shadow    border-orange-400 px-6 py-2 rounded-lg hover:bg-orange-400 hover:text-white transition">
+    اطلاعات بیشتر  </button>
         </div>
       </div>
 

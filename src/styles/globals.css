@@ -13,6 +13,8 @@
   --darkTextColor : #FFFFF5;
   --darkPrimary : #0C0F2C;
   --dark-light-primary: #1A1D3C;
+  
+  --light-primary2:#F8A61C;
 }
 
 .dark {
@@ -23,6 +25,13 @@
 
 .inner-orange-shadow {
   box-shadow: inset 5px 5px 10px rgba(248, 166, 28, 0.5), inset -5px -5px 10px rgba(248, 166, 28, 0.5);
+  color: var(--light-primary2);
+  border: 1px solid var(--primary2);
+}
+
+.inner-orange-shadow:hover{
+  box-shadow: none;
+  border: 1px solid var(--darkTextColor);
 }
 
 body{
