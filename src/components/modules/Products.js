@@ -183,7 +183,7 @@ function Products() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 items-center gap-8  mx-auto mb-20">
+        <div className="grid md:grid-cols-2 items-center gap-8 mx-auto mb-20">
           <div className="flex flex-row items-center justify-start gap-4">
             <div className="w-[6px] h-80 bg-orange-500 rounded" />
             <div>
@@ -194,7 +194,7 @@ function Products() {
                 smart vertical take_off drone
               </p>
             </div>
-            <div className=" rounded-xl p-6 w-full max-w-xs text-center">
+            <div className="bg-[#00143B] rounded-xl p-6 w-full max-w-xs text-center">
               <img src="/img1.jpg" alt="drone" className="mx-auto h-24 mb-4" />
               <p className="text-[10px] font-normal text-green-600">
                 پهپاد عمود پرواز هوشمند
