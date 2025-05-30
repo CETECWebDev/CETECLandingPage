@@ -1,49 +1,113 @@
-import React from 'react'
+import React, { useRef, useState, useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation, Autoplay } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-function CustomerReviews() {
+SwiperCore.use([Navigation, Autoplay]);
+
+const testimonialData = [
+  { id: 1, name: "علی فرج پ.ر", text: "مستول", img: "https://picsum.photos/101/101" },
+  { id: 2, name: "نوید پوررضا", text: "دفتر دار", img: "https://picsum.photos/102/102" },
+  { id: 3, name: "مهدی دادرس", text: "مدیر", img: "https://picsum.photos/103/103" },
+];
+
+const PrevArrow = ({ onClick }) => (
+  <button
+    onClick={onClick}
+    className="absolute left-[-50px] top-1/2 transform -translate-y-1/2 z-20 text-white text-3xl"
+    aria-label="Previous"
+  >
+    <FaChevronLeft />
+  </button>
+);
+
+const NextArrow = ({ onClick }) => (
+  <button
+    onClick={onClick}
+    className="absolute right-[-50px] top-1/2 transform -translate-y-1/2 z-20 text-white text-3xl"
+    aria-label="Next"
+  >
+    <FaChevronRight />
+  </button>
+);
+
+const Testimonial = () => {
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
+  const [swiperReady, setSwiperReady] = useState(false);
+
+  useEffect(() => {
+    setSwiperReady(true);
+  }, []);
+
   return (
-    <div className="container">
-      <section
-        className="text-white min-h-screen flex flex-col items-center justify-center px-6 text-center"
-        dir="rtl"
-      >
-        <div>
-          {/* عنوان و توضیح */}
-          <h1 className="text-[32px] font-extrabold md:text-4xl leading-relaxed text-center text-white">
-            نظرات مشتریان قطب دانش
-          </h1>
-          <p className="text-[20px] font-medium text-gray-300 mt-6 leading-loose pt-5">
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است، با
-            استفاده از طراحان گرافیک. چاپگرها و متون بلکه روزنامه‌ها و مجله‌ها
-            در ستون و سطر لازم، و برای شرایط فعلی تکنولوژی و کاربردهای متنوع
-            طراحی شده‌اند.
-          </p>
+    <div data-aos="fade-up" data-aos-duration="300" className="py-10">
+      <div className="container">
+        <div className="text-center mb-20 max-w-[600px] mx-auto">
+          
+          <h1 className="text-3xl font-extrabold text-white">نظریات مشتریان قطب دانش</h1>
 
-          {/* نظرات مشتریان - واکنش‌گرا با Grid */}
-          <div className="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-12">
-            {[1, 2, 3, 4].map((i) => (
-              <div
-                key={i}
-                className="flex flex-col items-center gap-4 min-w-[200px]"
-              >
-                <img
-                  src={`/review${i}.jpg`}
-                  alt={`نظر مشتری ${i}`}
-                  className="rounded-full w-16 h-16 object-cover shadow-lg"
-                />
-                <div className="text-center mt-2">
-                  <p className="text-[18px] font-semibold text-white">
-                    مهدی مقدم
-                  </p>
-                  <p className="text-[16px] text-gray-400">مدیر مالی</p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <p className=" text-9xl text-white mt-3 top-5 ">،،</p>
+          <p className="text-xl font-medium  text-gray-100 mb-3">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+             از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است. برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می‌باشد.
+            </p>
         </div>
-      </section>
-    </div>
-  )
-}
 
-export default CustomerReviews
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="300"
+          className="grid grid-cols-1 max-w-[250px] mx-auto gap-6 relative"
+        >
+          <div ref={prevRef}>
+            <PrevArrow />
+          </div>
+          <div ref={nextRef}>
+            <NextArrow />
+          </div>
+
+          {swiperReady && (
+            <Swiper
+              spaceBetween={30}
+              slidesPerView={1}
+              loop={true}
+              autoplay={{ delay: 4000, disableOnInteraction: false }}
+              navigation={{
+                prevEl: prevRef.current,
+                nextEl: nextRef.current,
+              }}
+            >
+              {testimonialData.map((data) => (
+                <SwiperSlide key={data.id}>
+                  <div className="my-6">
+                    <div className="flex flex-col gap-4 shadow-lg py-8 px-6 mx-4 rounded-xl dark:bg-gray-800 bg-primary/10 relative items-center text-center">
+                      <div>
+                        <img
+                          className="rounded-full w-20 h-20 mx-auto"
+                          src={data.img}
+                          alt=""
+                        />
+                      </div>
+                      <div className="flex flex-col items-center gap-4">
+                        <div>
+                          <h1 className="text-xl font-medium text-white">{data.name}</h1>
+                          <p className="text-white text-sm">{data.text}</p>
+                        </div>
+                      </div>
+
+                     
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Testimonial; 
