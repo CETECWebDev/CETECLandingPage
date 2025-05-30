@@ -3,7 +3,7 @@ import React from 'react';
 function Features() {
   return (
     <section id="services" className="py-16  text-white">
-      <div className="container mx-auto px-6">
+      <div className="container  px-6">
         <div className="service-top text-center mb-12">
           <h1 className="text-[32px] font-extrabold mb-4">
             کاربردهای هوشمند فناوری‌های ما
