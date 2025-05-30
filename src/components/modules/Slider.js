@@ -45,7 +45,7 @@ export default function Slider() {
               <div className="relative ">
                 <img className="object-cover h-full" src="/imgiot.png"/>
                 <div className="h-1/3 absolute bottom-0 backdrop-blur-xl p-2 text-gray-300">
-                  <h2>لورم ایپسوم</h2>
+                  <h2 >لورم ایپسوم</h2>
                   <p className=" text-sm">
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
                     با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
