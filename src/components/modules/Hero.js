@@ -1,3 +1,5 @@
+
+
 export default function Hero() {
   return (
     <div className="bg-[url('/earth.svg')] bg-fixed bg-cover bg-no-repeat bg-center 4k:h-[1000px] h-[600px]">

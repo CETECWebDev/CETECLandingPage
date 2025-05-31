@@ -5,8 +5,22 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 export default function Slider() {
+
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
+  const swiperRef = useRef(null);
+
+    const handlePrev = () => {
+    if (swiperRef.current) swiperRef.current.slidePrev();
+  };
+
+  const handleNext = () => {
+    if (swiperRef.current) swiperRef.current.slideNext();
+  };
+
   return (
     <>
       <div className="container px-20">
@@ -14,8 +28,11 @@ export default function Slider() {
           effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}
-          initialSlide={0}
+          initialSlide={1}
           loop={false}
+          onSwiper={(swiper) => {
+              swiperRef.current = swiper;
+            }}
           // speed={1000}
           spaceBetween={80}
           slidesPerView={3}
@@ -39,6 +56,9 @@ export default function Slider() {
           }}
           modules={[EffectCoverflow, Pagination, Navigation]}
           className="swiper_container relative"
+
+
+          
         >
           <SwiperSlide >
             <div className=" rounded-3xl p-6 bg-[var(--dark-light-primary)]">
@@ -86,13 +106,19 @@ export default function Slider() {
             </div>
           </SwiperSlide>
 
-          <div className="swiper-button-prev slider-arrow absolute left-0 top-2/3 -translate-y-1/2 z-10 text-white text-3xl">
-            <ion-icon name="arrow-back-outline"></ion-icon>
-          </div>
-          <div className="swiper-button-next slider-arrow absolute right-0 top-2/3 -translate-y-1/2 z-10 text-white text-3xl">
-            <ion-icon name="arrow-forward-outline"></ion-icon>
-          </div>
-
+          {/* Custom Arrows */}
+          <button
+            onClick={handlePrev}
+            className="absolute left-[90px] top-1/2 transform -translate-y-1/2 z-20 text-gray-300 text-xl"
+          >
+            <FaChevronLeft />
+          </button>
+          <button
+            onClick={handleNext}
+            className="absolute right-[90px] top-1/2 transform -translate-y-1/2 z-20 text-gray-300 text-xl"
+          >
+            <FaChevronRight />
+          </button>
           <div className="swiper-pagination mt-4 flex justify-center gap-2"></div>
         </Swiper>
       </div>

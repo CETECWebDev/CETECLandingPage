@@ -1,11 +1,29 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import Link from "next/link";
 import { GiDeliveryDrone } from "react-icons/gi";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { useTheme } from "next-themes";
+import { BsFillMoonStarsFill } from "react-icons/bs";
+import { IoMdSunny } from "react-icons/io";
+
+
 
 export default function Navbar() {
+
+    const [mounted, setMounted] = useState(false);
+
+
+
+    useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
+
+const { theme, setTheme } = useTheme();
   const mainMenus = [
     { key: "products", label: "محصولات" },
     { key: "services", label: "خدمات" },
@@ -168,6 +186,17 @@ export default function Navbar() {
 
           <button className="text-[18px] font-medium border border-[var(--primary2)] text-white px-[24px] py-[11px] rounded-[25px] hover:border-white transition">
             ثبت‌نام / ورود
+          </button>
+
+
+            <button
+            suppressHydrationWarning
+            className="linkHover hover:text-[var(--textHover)] hover:border-[var(--textHover)] border flex justify-center items-center rounded-full color-[var(--colTextB)] w-10 h-10"
+            onClick={() =>
+              setTheme(theme === "dark" ? "light" : "dark")
+            }
+          >
+            {theme === "dark" ? <IoMdSunny /> : <BsFillMoonStarsFill />}
           </button>
 
         </div>
