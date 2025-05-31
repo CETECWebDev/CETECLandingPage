@@ -41,13 +41,13 @@ const Testimonial = () => {
           {/* Custom Arrows */}
           <button
             onClick={handlePrev}
-            className="absolute left-[-40px] top-1/2 transform -translate-y-1/2 z-20 text-white text-3xl"
+            className="absolute left-[90px] top-1/2 transform -translate-y-1/2 z-20 text-gray-300"
           >
             <FaChevronLeft />
           </button>
           <button
             onClick={handleNext}
-            className="absolute right-[-40px] top-1/2 transform -translate-y-1/2 z-20 text-white text-3xl"
+            className="absolute right-[90px] top-1/2 transform -translate-y-1/2 z-20 text-gray-300 tet-xl"
           >
             <FaChevronRight />
           </button>
@@ -64,7 +64,7 @@ const Testimonial = () => {
             {testimonialData.map((data) => (
               <SwiperSlide key={data.id}>
                 <div className="my-6">
-                  <div className="flex flex-col gap-4 shadow-lg py-8 px-6 rounded-xl items-center text-center ">
+                  <div className="flex flex-col gap-4  py-8 px-6 rounded-xl items-center text-center ">
                     <img
                       className="rounded-full w-20 h-20 mx-auto"
                       src={data.img}
