@@ -16,9 +16,6 @@
   
   --light-primary2:#F8A61C;
 }
-@import "slick-carousel/slick/slick.css";
-@import "slick-carousel/slick/slick-theme.css";
-
 
 .dark {
   --primary2 : #F8A61C ; 
