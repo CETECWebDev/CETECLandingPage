@@ -17,7 +17,7 @@
   --light-primary2:#F8A61C;
 }
 
-.dark {
+[data-theme='dark'] {
   --BgColor : linear-gradient(#020621, #020A2A);
 }
 
