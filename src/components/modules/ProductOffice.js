@@ -4,7 +4,7 @@ import { AiOutlineRobot } from 'react-icons/ai';
 
 function ProductOffice() {
   return (
-    <section className="py-16 container text-white" dir="rtl">
+    <section className="py-16 text-white" dir="rtl">
       <h1 className="text-[32px] font-extrabold text-white text-center mb-10">
         محصولات دانش بنیان
       </h1>
