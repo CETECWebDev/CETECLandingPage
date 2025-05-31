@@ -8,22 +8,16 @@ import { useTheme } from "next-themes";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { IoMdSunny } from "react-icons/io";
 
-
-
 export default function Navbar() {
+  const [mounted, setMounted] = useState(false);
 
-    const [mounted, setMounted] = useState(false);
-
-
-
-    useEffect(() => {
+  useEffect(() => {
     setMounted(true);
   }, []);
 
   if (!mounted) return null;
 
-
-const { theme, setTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
   const mainMenus = [
     { key: "products", label: "محصولات" },
     { key: "services", label: "خدمات" },
@@ -57,7 +51,6 @@ const { theme, setTheme } = useTheme();
         desc: "حمل بار تا ۲۰ کیلوگرم در ارتفاع بالا",
         href: "#",
       },
-
     ],
     services: [
       {
@@ -112,7 +105,6 @@ const { theme, setTheme } = useTheme();
         desc: "حمل بار تا ۲۰ کیلوگرم در ارتفاع بالا",
         href: "#",
       },
-
     ],
   };
 
@@ -120,14 +112,12 @@ const { theme, setTheme } = useTheme();
     <div className="container">
       <nav className="text-white px-6 py-4 lg:block">
         <div className="flex items-center justify-between">
-
           {/* Mobile Hamburger Menu */}
 
           <button className="flex lg:hidden items-center gap-2 text-[var(--primary2)] shadow-[var(--primary2)] rounded-full inner-orange-shadow py-3  px-5">
             <RxHamburgerMenu />
             <span>فهرست</span>
           </button>
-
 
           {/* Logo */}
 
@@ -138,7 +128,6 @@ const { theme, setTheme } = useTheme();
               className="h-[50px] w-[150px]"
             />
           </div>
-
 
           {/* Menu Option */}
 
@@ -163,7 +152,6 @@ const { theme, setTheme } = useTheme();
                         href={item.href}
                         className="block px-4 py-2 bg-opacity-50  ] "
                       >
-
                         <div className="flex gap-2    hover:bg-[var(--darkPrimary) ">
                           <GiDeliveryDrone className="text-[var(--primary2)] text-xl" />
                           <div className="flex flex-col justify-center">
@@ -173,7 +161,6 @@ const { theme, setTheme } = useTheme();
                             </p>
                           </div>
                         </div>
-
                       </Link>
                     </li>
                   ))}
@@ -182,23 +169,22 @@ const { theme, setTheme } = useTheme();
             ))}
           </ul>
 
-          {/* Register/Login Button */}
 
-          <button className="text-[18px] font-medium border border-[var(--primary2)] text-white px-[24px] py-[11px] rounded-[25px] hover:border-white transition">
-            ثبت‌نام / ورود
-          </button>
-
-
+          <div  className="flex gap-4 items-center justify-center">
+            {/* darkmode/loghtmode toggle */}
             <button
-            suppressHydrationWarning
-            className="linkHover hover:text-[var(--textHover)] hover:border-[var(--textHover)] border flex justify-center items-center rounded-full color-[var(--colTextB)] w-10 h-10"
-            onClick={() =>
-              setTheme(theme === "dark" ? "light" : "dark")
-            }
-          >
-            {theme === "dark" ? <IoMdSunny /> : <BsFillMoonStarsFill />}
-          </button>
+              suppressHydrationWarning
+              className="linkHover hover:text-[var(--textHover)] hover:border-[var(--textHover)] border flex justify-center items-center rounded-full color-[var(--colTextB)] w-10 h-10"
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            >
+              {theme === "dark" ? <IoMdSunny /> : <BsFillMoonStarsFill />}
+            </button>
 
+          {/* Register/Login Button */}
+            <button className="text-[18px] font-medium border border-[var(--primary2)] text-white px-[24px] py-[11px] rounded-[25px] hover:border-white transition">
+              ثبت‌نام / ورود
+            </button>
+          </div>
         </div>
       </nav>
     </div>
