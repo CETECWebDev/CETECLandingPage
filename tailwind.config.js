@@ -14,6 +14,9 @@ module.exports = {
        fontFamily: {
         peyda: ['Peyda', 'sans-serif'],
       },
+            screens: {
+        '4k': '2000px', 
+      },
     },
   },
     plugins: [require("flowbite/plugin")],

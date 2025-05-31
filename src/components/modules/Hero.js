@@ -1,7 +1,9 @@
+
+
 export default function Hero() {
   return (
-    <div className="custom-banner-earth">
-          <section className=" text-white min-h-screen flex items-center justify-center px-6 text-center">
+    <div className="bg-[url('/earth.svg')] bg-fixed bg-cover bg-no-repeat bg-center 4k:h-[1000px] h-[600px]">
+          <section className=" h-full text-white  flex items-center justify-center px-6 text-center">
       <div className="">
         <h1 className="text-[48px] font-medium  md:text-4xl  leading-relaxed text-center text-orange-400">
           قطب دانش

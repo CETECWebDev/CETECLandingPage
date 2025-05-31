@@ -8,7 +8,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 SwiperCore.use([Navigation, Autoplay]);
 
 const testimonialData = [
-  { id: 1, name: "علی فرج پ.ر", text: "مستول", img: "https://picsum.photos/101/101" },
+  { id: 1, name: "علی فرج پ.ر", text: "مسئول", img: "https://picsum.photos/101/101" },
   { id: 2, name: "نوید پوررضا", text: "دفتر دار", img: "https://picsum.photos/102/102" },
   { id: 3, name: "مهدی دادرس", text: "مدیر", img: "https://picsum.photos/103/103" },
 ];
@@ -46,14 +46,14 @@ const Testimonial = () => {
     <div data-aos="fade-up" data-aos-duration="300" className="py-10">
       <div className="container">
         <div className="text-center mb-20 max-w-[600px] mx-auto">
-          
           <h1 className="text-3xl font-extrabold text-white">نظریات مشتریان قطب دانش</h1>
-
-          <p className=" text-9xl text-white mt-3 top-5 ">،،</p>
-          <p className="text-xl font-medium  text-gray-100 mb-3">
+          <p className="text-9xl text-white mt-3 top-5">،،</p>
+          <p className="text-xl font-medium text-gray-100 mb-3">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-             از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است. برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می‌باشد.
-            </p>
+            از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+            سطرآنچنان که لازم است. برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+            متنوع با هدف بهبود ابزارهای کاربردی می‌باشد.
+          </p>
         </div>
 
         <div
@@ -83,21 +83,13 @@ const Testimonial = () => {
                 <SwiperSlide key={data.id}>
                   <div className="my-6">
                     <div className="flex flex-col gap-4 shadow-lg py-8 px-6 mx-4 rounded-xl dark:bg-gray-800 bg-primary/10 relative items-center text-center">
-                      <div>
-                        <img
-                          className="rounded-full w-20 h-20 mx-auto"
-                          src={data.img}
-                          alt=""
-                        />
-                      </div>
-                      <div className="flex flex-col items-center gap-4">
-                        <div>
-                          <h1 className="text-xl font-medium text-white">{data.name}</h1>
-                          <p className="text-white text-sm">{data.text}</p>
-                        </div>
-                      </div>
-
-                     
+                      <img
+                        className="rounded-full w-20 h-20 mx-auto"
+                        src={data.img}
+                        alt={data.name}
+                      />
+                      <h1 className="text-xl font-medium text-white">{data.name}</h1>
+                      <p className="text-white text-sm">{data.text}</p>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -110,4 +102,4 @@ const Testimonial = () => {
   );
 };
 
-export default Testimonial; 
+export default Testimonial;
