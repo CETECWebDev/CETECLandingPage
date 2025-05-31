@@ -13,9 +13,9 @@ function Products() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 items-center gap-8 mb-20">
+        <div className="grid md:grid-cols-2 items-center gap-8 mb-20 mt-10">
           <div className="flex flex-row items-center justify-start gap-4">
-            <div className="w-[6px] h-80 bg-orange-500 rounded" />
+            <div className="w-[25px] h-[350px] bg-orange-500 rounded" />
             <div>
               <p
                 className="text-[22px] font-medium text-orange-500 tracking-wider"
@@ -39,7 +39,7 @@ function Products() {
               پهپاد عمود پرواز هوشمند{" "}
               <span className="text-green-500">ورژن ۱.۲</span>
             </h2>
-            <p className="text-[24px] font-medium text-gray-300 leading-relaxed mb-6">
+            <p className="text-[24px] font-medium text-gray-300 leading-relaxed mb- mt-3 pl=12">
               این محصول اولین نسل پهپادهای هوشمند عمودپرواز تولید شده در ایران
               است. دارای بخش کنترل پرواز پیشرفته‌ای است که آن را برای کاربردهای
               بسیاری از جمله امداد و نجات، مدیریت بحران، بازرسی و امنیت و
@@ -50,21 +50,24 @@ function Products() {
               className="text-[18px] font-medium mt-8
         inner-orange-shadow    px-6 py-2 rounded-lg hover:bg-[var(--dark-light-primary)] hover:text-white transition"
             >
-              اطلاعات بیشتر{" "}
+              اطلاعات بیشتر
             </button>
           </div>
         </div>
 
-        {/* محصول ۲ */}
+
+
+
+       
         <div className="grid md:grid-cols-2 items-center gap-8  mx-auto mb-20">
-          <div>
-            <h2 className="text-[32px] font-semibold mb-2">
+          <div className="w-[652px] h-[303px] px-12 py-6">
+            <h2 className="text-[32px] font-semibold mb-4">
               پهپاد عمود پرواز هوشمند{" "}
               <span className="text-[32px] font-semibold text-gray-400">
                 ورژن ۱.۲
               </span>
             </h2>
-            <p className="text-[24px] font-medium text-gray-300 leading-relaxed mb-6">
+            <p className="text-[24px] font-medium text-gray-300 leading-relaxed mb-6 mt-3 pr-6">
               این محصول اولین نسل پهپادهای هوشمند عمودپرواز تولید شده در ایران
               است. دارای بخش کنترل پرواز پیشرفته‌ای است که آن را برای کاربردهای
               بسیاری از جمله امداد و نجات، مدیریت بحران، بازرسی و امنیت و
@@ -75,12 +78,12 @@ function Products() {
               className="text-[18px] font-medium mt-8
         inner-orange-shadow    px-6 py-2 rounded-lg hover:bg-[var(--dark-light-primary)] hover:text-white transition"
             >
-              اطلاعات بیشتر{" "}
+              اطلاعات بیشتر
             </button>
           </div>
 
           <div className="flex flex-row-reverse items-center justify-start gap-4">
-            <div className="w-[6px] h-80  bg-orange-500 rounded left-0" />
+             <div className="w-[25px] h-[350px] bg-orange-500 rounded" />
             <div>
               <p
                 className="text-[22px] font-medium text-orange-400 tracking-wider"
@@ -97,10 +100,10 @@ function Products() {
           </div>
         </div>
 
-        {/* محصول ۳ */}
+       
         <div className="grid md:grid-cols-2 items-center gap-8 mx-auto mb-20">
           <div className="flex flex-row items-center justify-start gap-4">
-            <div className="w-[6px] h-80 bg-orange-500 rounded" />
+            <div className="w-[25px] h-[350px] bg-orange-500 rounded" />
             <div>
               <p
                 className="text-[22px] font-medium text-orange-500 tracking-wider"
@@ -119,7 +122,7 @@ function Products() {
               </p>
             </div>
           </div>
-          <div>
+          <div className="w-[652px] h-[303px] px-12 py-6">
             <h2 className="text-[32px] font-semibold mb-2">
               پهپاد عمود پرواز هوشمند{" "}
               <span className="text-green-500">ورژن ۱.۲</span>
@@ -135,15 +138,14 @@ function Products() {
               className="text-[18px] font-medium mt-8
         inner-orange-shadow    px-6 py-2 rounded-lg hover:bg-[var(--dark-light-primary)] hover:text-white transition"
             >
-              اطلاعات بیشتر{" "}
+              اطلاعات بیشتر
             </button>
           </div>
         </div>
 
-        {/* محصول ۴ */}
-        {/* محصول ۲ */}
+        
         <div className="grid md:grid-cols-2 items-center gap-8 mx-auto mb-20">
-          <div>
+          <div className="w-[652px] h-[303px] px-12 py-6">
             <h2 className="text-[32px] font-semibold mb-2">
               پهپاد عمود پرواز هوشمند{" "}
               <span className="text-[32px] font-semibold text-gray-400">
@@ -166,8 +168,8 @@ function Products() {
           </div>
 
           <div className="flex flex-row-reverse items-center justify-start gap-4">
-            <div className="w-[6px] h-80  bg-orange-500 rounded left-0" />
-            <div>
+             <div className="w-[25px] h-[350px] bg-orange-500 rounded" />
+            <div classNaame="w-[652px] h-[303px] px-12 py-6">
               <p
                 className="text-[22px] font-medium text-orange-400 tracking-wider"
                 style={{ writingMode: "vertical-rl", textOrientation: "mixed" }}
@@ -185,7 +187,7 @@ function Products() {
 
         <div className="grid md:grid-cols-2 items-center gap-8 mx-auto mb-20">
           <div className="flex flex-row items-center justify-start gap-4">
-            <div className="w-[6px] h-80 bg-orange-500 rounded" />
+            <div className="w-[25px] h-[350px] bg-orange-500 rounded" />
             <div>
               <p
                 className="text-[22px] font-medium text-orange-500 tracking-wider"
